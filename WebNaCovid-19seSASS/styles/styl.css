@@ -1,0 +1,42 @@
+body {
+  background-color: #c4a7fa;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-style: sans-serif;
+}
+
+.info {
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 450px;
+}
+
+.info * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.info div {
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  padding-top: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+}
+/*# sourceMappingURL=styl.css.map */
