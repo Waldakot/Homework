@@ -1,5 +1,5 @@
 # Dokumentace návrhu domácí sítě:
-![NavrhSite](file:///C:/Users/walda/OneDrive/Plocha/NavrhDomaciSite/roomka.JPG)
+![NavrhSite](roomka.JPG)
 
 ## Zařízení v síti: 
 ### 1xTV, Pořítač, Tiskárna,TV anténa, Rack, Chytré kuchyňské spotřebiče, Alexa a Telefony 
