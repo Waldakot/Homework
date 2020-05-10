@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <title>životopis</title>
+  
+  
+  <style>
+ fieldset {
+      border: 0;
+    }
+    label {
+      display: block;
+      margin: 30px 0 0 0;
+    }
+    .overflow {
+      height: 200px;
+    }
+
+
+
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+
+    fieldset {
+      border: 0;
+    }
+
+
+
+
+
+
+    body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-40%,-50%);
+    width: 720px;
+    height: 700px;
+	background: #fff;
+	padding: 25px;
+	box-sizing: border-box;
+
+}
+
+.container h1
+{
+	text-align: center;
+	margin: 0 0 40px;
+	padding: 0;
+	color: rgb(0, 255, 98);
+	letter-spacing: 2px;
+}
+.container input
+{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 55%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #999;
+}
+.container input[type="submit"]
+{
+	border-radius: 25px;
+	font-size: 20px;
+	height: 40px;
+	cursor : pointer;
+	background: rgb(255, 166, 0);
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.container input:focus,
+.container input:valid
+{
+	border-bottom: 2px solid rgb(66,133,244);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+ <script>
+    $( function() {
+      var availableTags = [
+        "Základní škola",
+        "Střední škola",
+        "Zdravotnická škola",
+        "Vysoká škola",
+        "Umělecké školy",
+        "Bakalář",
+        "Akademie",
+        "Církevní škola",
+        
+      ];
+      $( "#tags" ).autocomplete({
+        source: availableTags
+      });
+    } );
+    </script>
+
+<script>
+$( function() {
+    $( "#speed" ).selectmenu();
+    </script>
+
+
+  <script>
+  $( function() {
+    $( "#email" ).selectmenu();
+ 
+  
+  } );
+  </script>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+   
+<script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
+  </head>
+ 
+
+   
+  
+  
+
+</head>
+
+
+
+<body>
+    
+
+   
+   
+         
+         
+         <br></br>
+
+         <div class="container">
+         <h1>Životopis </h1>
+                  <h2>Osobní údaje</h2> 
+        <form id="registration_form" action="php.php" method="post">
+            <div>  
+                 První jméno
+                <input type="text" id="form_fname" name="a" required="">
+                <span class="error_form" id="fname_error_message"></span>
+                <label>
+                 
+                </label>
+            </div>
+            <div>
+                  Příjmení   
+                <input type="text" id="form_sname" name="b" required="">
+                <span class="error_form" id="sname_error_message"></span>
+                <label>
+                  
+                </label>
+            </div>
+            <div> 
+                Email
+                <input type="email" id="form_email" name="c" required="">
+                <span class="error_form" id="email_error_message"></span>
+                <label>
+                   (viz.: waldakot@seznam.cz)
+            
+            </div>
+
+<p>Date: <input type="text" id="datepicker"></p>
+
+<div class="ui-widget">
+    <label for="tags">dokončená škola: </label>
+    <input id="tags">
+  </div>
+
+
+
+
+
+<div class="demo">
+ 
+<form action="#">
+ 
+
+
+<h2>Vzdělání</h2>
+<div>  
+                 
+                <input type="text" id="form_fname" name="a" required="">
+</div>
+
+<h2>Průběh zaměstnání </h2>
+<div>  
+                 
+                <input type="text" id="form_fname" name="a" required="">
+</div>
+
+    <h2>Jazykové znalosti</h2>
+  <fieldset>
+    <label for="A">Jazykové znalosti z češtiny</label>
+    <select name="A" id="A">
+      <option>Rodiný mluvčí</option>
+      <option>jakž takž</option>
+      <option selected="selected">žádné</option>
+     
+      
+    </select>
+
+ <br></br>
+
+    <label for="B">Jazykové znalosti z němčiny</label>
+    <select name="B" id="B">
+      <option>Rodiný mluvčí</option>
+      <option>jakž takž</option>
+      <option selected="selected">žádné</option>
+     
+      
+    </select>
+    <br></br>
+
+    <label for="email">Jazykové znalosti z angličtiny</label>
+    <select name="email" id="speed">
+      <option>Rodiný mluvčí</option>
+      <option>jakž takž</option>
+      <option selected="selected">žádné</option>
+     <br></br>
+     
+ 
+ 
+  </fieldset>
+  <input type="submit" name = "spocitej" value = "odeslat">
+    </select>
+</form>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+ 
+ 
+</body>
+
+</html>
