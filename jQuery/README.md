@@ -1,3 +1,3 @@
 ## tato práce je hlavně zaměřená na jQuery
-![NavrhSite](screen.PNG)
-![NavrhSite](screen2.png)
+![zivotopis](screen.PNG)
+![životopis](screen2.png)
