@@ -1,2 +1,2 @@
 ## V tom to repozitáři najdete všechny certifikáty ze sololearnu co mám
-![java](java certifikat.JFIF)
+![java](java certifikat.jfif)
